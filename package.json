@@ -1,0 +1,25 @@
+{
+  "name": "nm",
+  "private": true,
+  "version": "0.0.1",
+  "description": "A template for creating a new npm module, preferred node-cli tools",
+  "bin": {
+    "nm": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublishOnly": "nr build",
+    "dev": "pnpm run build --watch",
+    "build": "tsup bin --dts",
+    "release": "bumpp --commit --push --tag && pnpm publish"
+  },
+  "keywords": [],
+  "author": "w2xi",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "bumpp": "^9.4.0",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.3"
+  }
+}
