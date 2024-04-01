@@ -11,6 +11,9 @@ devDependencies:
   bumpp:
     specifier: ^9.4.0
     version: 9.4.0
+  prettier:
+    specifier: ^3.2.5
+    version: 3.2.5
   tsup:
     specifier: ^8.0.2
     version: 8.0.2(typescript@5.4.3)
@@ -1155,6 +1158,12 @@ packages:
     dependencies:
       lilconfig: 3.1.1
       yaml: 2.4.1
+    dev: true
+
+  /prettier@3.2.5:
+    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /prompts@2.4.2:
