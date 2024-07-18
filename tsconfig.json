@@ -1,19 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "CommonJS",
-    "outDir": "bin",
+    "target": "esnext",
+    "lib": ["esnext"],
+    "module": "esnext",
     "moduleResolution": "node",
-    "esModuleInterop": true,
     "resolveJsonModule": true,
-    "declaration": true,
-    "sourceMap": true,
-    "types": ["node"],
-  },
-  "include": [
-    "bin/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "strict": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  }
 }
